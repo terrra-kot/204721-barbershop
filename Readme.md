@@ -1,5 +1,7 @@
 # Учебный проект «Барбершоп»
 
+*Наставник: [Игорь Дерябин](https://htmlacademy.ru/profile/id212247)
+
 * Студент: [Роман Коробейников](https://up.htmlacademy.ru/htmlcss/16/user/204721).
 
 ---
