@@ -2,213 +2,352 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Средства для ухода на Barbershop.ru</title>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<title>
+			Средства для ухода на Barbershop.ru
+		</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
+
 	<body>
+
+		<!--Шапка сайта-->
 		<header class="main-header">
+
+			<!--Центровка блока-->
 			<div class="container">
-				<div class="logo"></div>
-				<div class="main-navigation">
+				<img class="logo" src="http://placehold.it/150x100">
+
+				<!--Главный блок навигации по сайту-->
+				<nav class="main-navigation">
 					<ul>
 						<li>
-							<a href="#">Информация</a>
+							<a href="#">
+								Информация
+							</a>
 						</li>
 						<li>
-							<a href="#">Новости</a>
+							<a href="#">
+								Новости
+							</a>
 						</li>
 						<li>
-							<a href="#">Прайс-лист</a>
+							<a href="#">
+								Прайс-лист
+							</a>
 						</li>
 						<li>
-							<a href="#">Магазин</a>
+							<a href="#">
+								Магазин
+							</a>
 						</li>
 						<li>
-							<a href="#">Контакты</a>
+							<a href="#">
+								Контакты
+							</a>
 						</li>
 					</ul>
+				</nav>
+				<!--конец-->
+
+				<!--Авторизация на сайте-->
+				<div class="user-block">
+					<a class="login" href="#">
+						<img src="http://placehold.it/150x100">
+					</a>
 				</div>
-				<div class="user-block login-button">
-					<a class="login" href="#">Вход</a>
-				</div>
+				<!--конец-->
+
 			</div>
+			<!--Центровка блока - конец-->
+
 		</header>
+		<!--Шапка сайта - конец-->
+
+
+		<!--Основной контент-->
+		<!--Центровка блока-->
 		<main class="container">
-				<div class="breadcrumbs align-left">
-					<h1 class="current-category">
+
+				<h1 class="current-category">
 						Средства для ухода
-					</h1>
+				</h1>
+
+				<!--Дополнительный блок навигации-->
+				<div class="breadcrumbs align-left">
 					<ul class="nav">
 						<li>
-							<a href="#">Главная</a>
+							<a href="#">
+								Главная
+							</a>
 						</li>
 						<li>
-							<a href="#">Магазин</a>
+							<a href="#">
+								Магазин
+							</a>
 						</li>
 						<li>
-							<a href="#">Средства для ухода</a>
+							<a href="#">
+								Средства для ухода
+							</a>
 						</li>
 					</ul>
 				</div>
+				<!--конец-->
+
+				<!--Левый сайдбар-->
 				<div class="sidebar-left">
-					<div class="brend">
-						<legend>Производители:</legend>
-						<label>
-							<input type="checkbox" name="baxter-of-california" checked>
-							Baxter of California
-						</label>
-						<label>
-							<input type="checkbox" name="mr-natty">
-							Mr Natty
-						</label>
-						<label>
-							<input type="checkbox" name="suavecito" checked>
-							Suavecito
-						</label>
-						<label>
-							<input type="checkbox" name="malin-goetz">
-							Malin+Goetz
-						</label>
-						<label>
-							<input type="checkbox" name="murrays">
-							Murray&prime;s
-						</label>
-						<label>
-							<input type="checkbox" name="american-crew" checked>
-							American crew
-						</label>
-					</div>
-					<div class="item-group">
-						<legend>Группы товаров:</legend>
-						<label>
-							<input type="radio" name="shave-kit">
-							Бритвенные принадлежности
-						</label>
-						<label>
-							<input type="radio" name="bodycare" checked>
-							Средства для ухода
-						</label>
-						<label>
-							<input type="radio" name="accessories">
-							Аксессуары
-						</label>
-					</div>
-					<div class="show-info show-button">
-						<a href="#">Показать</a>
-					</div>
+
+					<!--Форма для отправки данных-->
+					<form>
+
+						<!--Выбор производителей-->
+						<div class="brend">
+							<span class="vendor">
+								Производители:
+							</span>
+							<label>
+								<input type="checkbox" name="baxter-of-california" value="baxter-of-california" checked>
+								Baxter of California
+							</label>
+							<label>
+								<input type="checkbox" name="mr-natty" value="mr-natty">
+								Mr Natty
+							</label>
+							<label>
+								<input type="checkbox" name="suavecito" value="suavecito" checked>
+								Suavecito
+							</label>
+							<label>
+								<input type="checkbox" name="malin-goetz" value="malin-goetz">
+								Malin+Goetz
+							</label>
+							<label>
+								<input type="checkbox" name="murrays" value="murrays">
+								Murray&prime;s
+							</label>
+							<label>
+								<input type="checkbox" name="american-crew" value="american-crew" checked>
+								American crew
+							</label>
+						</div>
+						<!--конец-->
+
+						<!--Выбор группы товаров-->
+						<div class="item-group">
+							<span>
+								Группы товаров:
+							</span>
+							<label>
+								<input type="radio" name="item-group" value="shave-kit">
+								Бритвенные принадлежности
+							</label>
+							<label>
+								<input type="radio" name="item-group" value="bodycare" checked>
+								Средства для ухода
+							</label>
+							<label>
+								<input type="radio" name="item-group" value="accessories">
+								Аксессуары
+							</label>
+						</div>
+						<!--конец-->
+
+						<!--Кнопка отправки-->
+						<button class="show-info" type="submit" name="submit">
+							Показать
+						</button>
+						<!--конец-->
+
+					</form>
+					<!--Форма для отправки данных - конец-->
+
 				</div>
+				<!--Левый сайдбар - конец-->
+
+				<!--Галлерея товаров-->
 				<div class="list-item">
+
+					<!--Единица товара-->
 					<article class="item">
-						<img class="item-photo" src="img/travel-kit-baxter-of-california.img" width="120" height="165" alt="Фото пока отсутствует">
-						<div class="item-description">
+						<img class="item-photo" src="http://placehold.it/150x100">
+						<h2 class="item-description">
 							Набор для путешествий &laquo;<span>Baxter of California</span>&raquo;
-						</div>
-						<div class="item-price">
+						</h2>
+						<p class="item-price">
 							2900 руб.
-						</div>
+						</p>
 						<div class="buy-button">
-							<a href="#">Купить</a>
+							<a href="#">
+								Купить
+							</a>
 						</div>
 					</article>
+					<!--конец-->
+
+					<!--Единица товара-->
 					<article class="item">
-						<img class="item-photo" src="img/conditioner-baxter-of-california.img" width="120" height="165" alt="Фото пока отсутствует">
-						<div class="item-description">
+						<img class="item-photo" src="http://placehold.it/150x100">
+						<h2 class="item-description">
 							Увлажняющий кондиционер &laquo;<span>Baxter of California</span>&raquo;
-						</div>
-						<div class="item-price">
+						</h2>
+						<p class="item-price">
 							750 руб.
-						</div>
+						</p>
 						<div class="buy-button">
-							<a href="#">Купить</a>
+							<a href="#">
+								Купить
+							</a>
 						</div>
 					</article>
+					<!--конец-->
+
+					<!--Единица товара-->
 					<article class="item">
-						<img class="item-photo" src="img/hair-gel-suavecito.img" width="120" height="165" alt="Фото пока отсутствует">
-						<div class="item-description">
+						<img class="item-photo" src="http://placehold.it/150x100">
+						<h2 class="item-description">
 							Гель для волос &laquo;<span>Suavecito</span>&raquo;
-						</div>
-						<div class="item-price">
+						</h2>
+						<p class="item-price">
 							290 руб.
-						</div>
+						</p>
 						<div class="buy-button">
-							<a href="#">Купить</a>
+							<a href="#">
+								Купить
+							</a>
 						</div>
 					</article>
+					<!--конец-->
+
+					<!--Единица товара-->
 					<article class="item">
-						<img class="item-photo" src="img/hair-clay-american-crew.img" width="120" height="165" alt="Фото пока отсутствует">
-						<div class="item-description">
+						<img class="item-photo" src="ihttp://placehold.it/150x100">
+						<h2 class="item-description">
 							Глина для укладки волос &laquo;<span>American crew</span>&raquo;
-						</div>
-						<div class="item-price">
+						</h2>
+						<p class="item-price">
 							500 руб.
-						</div>
+						</p>
 						<div class="buy-button">
-							<a href="#">Купить</a>
+							<a href="#">
+								Купить
+							</a>
 						</div>
 					</article>
+					<!--конец-->
+
+					<!--Единица товара-->
 					<article class="item">
-						<img class="item-photo" src="img/hair-gel-american-crew.img" width="120" height="165" alt="Фото пока отсутствует">
-						<div class="item-description">
+						<img class="item-photo" src="http://placehold.it/150x100">
+						<h2 class="item-description">
 							Гель для волос &laquo;<span>American crew</span>&raquo;
-						</div>
-						<div class="item-price">
+						</h2>
+						<p class="item-price">
 							300 руб.
-						</div>
+						</p>
 						<div class="buy-button">
-							<a href="#">Купить</a>
+							<a href="#">
+								Купить
+							</a>
 						</div>
 					</article>
+					<!--конец-->
+
+					<!--Единица товара-->
 					<article class="item">
-						<img class="item-photo" src="img/shave-kit-baxter-of-california.img" width="120" height="165" alt="Фото пока отсутствует">
-						<div class="item-description">
+						<img class="item-photo" src="http://placehold.it/150x100">
+						<h2 class="item-description">
 							Набор для бритья &laquo;<span>Baxter of California</span>&raquo;
-						</div>
-						<div class="item-price">
+						</h2>
+						<p class="item-price">
 							3900 руб.
-						</div>
+						</p>
 						<div class="buy-button">
-							<a href="#">Купить</a>
+							<a href="#">
+								Купить
+							</a>
 						</div>
 					</article>
+					<!--конец-->
+
+					<!--Переключение страниц-->
 					<div class="page-select align-left">
-						<a class="select-button" href="#">1</a>
-						<a class="select-button" href="#">2</a>
-						<a class="select-button" href="#">3</a>
-						<a class="select-button" href="#">4</a>
+						<a class="select-button" href="#">
+							1
+						</a>
+						<a class="select-button" href="#">
+							2
+						</a>
+						<a class="select-button" href="#">
+							3
+						</a>
+						<a class="select-button" href="#">
+							4
+						</a>
 					</div>
+					<!--конец-->
+
 				</div>
+				<!--Галлерея товаров - конец-->
 			
 		</main>
+		<!--Основной контент - конец-->
+
+
+		<!--Подвал-->
 		<footer class="main-footer">
+
+			<!--Центровка блока-->
 			<div class="container">
-				<div class="address">
-					<p>
+
+				<!--Физический адрес-->
+				<address">
+					<span>
 						Барбершоп &laquo;Бородинский&raquo;<br>
 						Адрес: г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 						<a href="contacts.html">Как нас найти?</a><br>
 						Телефон: +7 (495) 666-02-66
-					</p>
-				</div>
+					</span>
+				</address>
+				<!--конец-->
+
+				<!--Адреса в социальных сетях-->
 				<div class="social">
-					<p>
+					<span>
 						Давайте дружить!
-					</p>
+					</span>
 					<div class="social-list">
-						<a class="social-btn" href="http://vk.com">Вконтакте</a>
-						<a class="social-btn" href="http://facebook.com">Фэйсбук</a>
-						<a class="social-btn" href="http://instagram.com">Инстаграм</a>
+						<a class="social-btn" href="http://vk.com">
+							<img class="item-photo" src="http://placehold.it/150x100">
+						</a>
+						<a class="social-btn" href="http://facebook.com">
+							<img class="item-photo" src="http://placehold.it/150x100">
+						</a>
+						<a class="social-btn" href="http://instagram.com">
+							<img class="item-photo" src="http://placehold.it/150x100">
+						</a>
 					</div>
 				</div>
+				<!--конец-->
+
+				<!--Разработчик сайта-->
 				<div class="autor">
 					<p>
 						Разработано:
 					</p>
 					<div>
-						<a class="autor-btn" href="http://htmlacademy.ru">HTML Академия</a>
+						<a class="autor-btn" href="http://htmlacademy.ru">
+							HTML Академия
+						</a>
 					</div>
 				</div>
+				<!--конец-->
+
 			</div>
+			<!--Центровка блока - конец-->
+
 		</footer>
+		<!--Подвал - конец-->
+
 	</body>
+
 </html>
