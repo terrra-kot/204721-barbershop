@@ -1,0 +1,22 @@
+body {
+	font-size: 14px;
+	line-height: 24px;
+	color: #f8f5f2;
+	font-weight: bold;
+	font-family: "PT Sans Narrow", Arial, sans-serif;
+	text-transform: uppercase;
+	background-color: #000000;
+}
+
+
+.features-item b {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.index-content h2 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+
