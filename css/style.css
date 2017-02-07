@@ -4,19 +4,20 @@ body {
 	color: #f8f5f2;
 	font-weight: bold;
 	font-family: "PT Sans Narrow", Arial, sans-serif;
-	text-transform: uppercase;
 	background-color: #000000;
 }
 
 
-.features-item b {
+.features-item .features-name {
 	font-size: 30px;
 	line-height: 42px;
+	text-transform: uppercase;
 }
 
 .index-content h2 {
 	font-size: 30px;
 	line-height: 42px;
+	text-transform: uppercase;
 }
 
 
